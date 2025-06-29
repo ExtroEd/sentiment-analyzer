@@ -1,14 +1,18 @@
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 import torch.nn.functional as F
+import os
+from dotenv import load_dotenv
 
+
+load_dotenv()
+token = os.getenv("HF_TOKEN")
 
 MODEL_NAME = "cointegrated/rubert-tiny-sentiment-balanced"
-tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-model = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME)
+tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, token=token)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model.to(device)
-model.eval()
+model = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME, token=token)
+
 
 LABELS_EN = {
     'negative': 'Negative',

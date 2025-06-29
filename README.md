@@ -27,7 +27,7 @@ Analyze text emotions with a gorgeous GUI, real-time pie charts and smooth gradi
 
 ## 📦 Installation
 
-> Python 3.10+ is recommended. Use [Poetry](https://python-poetry.org/) for managing dependencies.
+> Python 3.10 - 3.14 is recommended. Use [Poetry](https://python-poetry.org/) for managing dependencies.
 
 ```bash
 # Clone the repository
@@ -36,9 +36,6 @@ cd sentiment-analyzer
 
 # Install dependencies
 poetry install
-
-# Activate the virtual environment
-poetry shell
 ```
 
 > Or use `pip install -r requirements.txt` if you’re not using Poetry.
