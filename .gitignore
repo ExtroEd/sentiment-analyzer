@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+env/
+venv/
+ENV/
+.build/
+
+# PyInstaller
+*.spec
+dist/
+build/
+
+# Distribution / packaging
+*.egg-info/
+.eggs/
+*.egg
+*.whl
+
+# Logs and local stuff
+*.log
+*.sqlite3
+*.db
+*.pot
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Test cache
+.cache/
+.pytest_cache/
