@@ -11,7 +11,8 @@ token = os.getenv("HF_TOKEN")
 MODEL_NAME = "cointegrated/rubert-tiny-sentiment-balanced"
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, token=token)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME, token=token)
+model = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME,
+                                                           token=token)
 
 
 LABELS_EN = {
